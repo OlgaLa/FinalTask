@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1478464678179" stop="1478464705363" version="1.4.6">
+    <name>Default Suite</name>
+    <title>Default Suite : FinalTask[]</title>
+    <test-cases>
+        <test-case start="1478464688458" stop="1478464693577" status="passed">
+            <name>contactUsEmptyMessageTest[123,]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="M5400"/>
+                <label name="thread" value="5952@M5400.main"/>
+            </labels>
+        </test-case>
+        <test-case start="1478464702450" stop="1478464705242" status="passed">
+            <name>contactUsTest[123,Message 123]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="host" value="M5400"/>
+                <label name="thread" value="5952@M5400.main"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

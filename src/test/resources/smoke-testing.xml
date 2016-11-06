@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+<suite name="Smoke test suite">
+    <test name="smoke test suit">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="CartTest"/>
+            <class name="CheckoutTest"/>
+            <class name="ContactUsTest"/>
+            <class name="ProductPageTest"/>
+            <class name="RegistrationTest"/>
+            <class name="SearchTest"/>
+        </classes>
+    </test>
+</suite>
