@@ -28,7 +28,6 @@ public class TestBase {
                 driver = new FirefoxDriver();
                 break;
             default:
-                System.setProperty("webdriver.chrome.driver", "../chromedriver");
                 driver = new ChromeDriver();
                 break;
 
