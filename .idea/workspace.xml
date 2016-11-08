@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00c8d36d-578d-4699-9f63-152d6efe2fe2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_48.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_7.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_9_13_6.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/base/TestBase.class" afterPath="$PROJECT_DIR$/target/classes/base/TestBase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FinalTask.iml" afterPath="$PROJECT_DIR$/FinalTask.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/base/TestBase.java" afterPath="$PROJECT_DIR$/src/main/java/base/TestBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/cart-testing.xml" afterPath="$PROJECT_DIR$/src/test/resources/cart-testing.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/checkout-testing.xml" afterPath="$PROJECT_DIR$/src/test/resources/checkout-testing.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/contact-us-testing.xml" afterPath="$PROJECT_DIR$/src/test/resources/contact-us-testing.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/product-testing.xml" afterPath="$PROJECT_DIR$/src/test/resources/product-testing.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/registration-testing.xml" afterPath="$PROJECT_DIR$/src/test/resources/registration-testing.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/search-testing.xml" afterPath="$PROJECT_DIR$/src/test/resources/search-testing.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/ContactUsAttached.txt" afterPath="$PROJECT_DIR$/target/classes/ContactUsAttached.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" />
     </list>
     <ignored path="FinalTask.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,8 +50,8 @@
       <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/base/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="234">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/test/java/ProductPageTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RegistrationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/SearchTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/base/TestBase.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/checkout-testing.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/contact-us-testing.xml" />
@@ -211,6 +194,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/registration-testing.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/search-testing.xml" />
         <option value="$PROJECT_DIR$/src/test/resources/cart-testing.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/base/TestBase.java" />
       </list>
     </option>
   </component>
@@ -1354,8 +1338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/base/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="234">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
