@@ -20,7 +20,7 @@ public class TestBase {
 
     @BeforeMethod
     public void setUp() {
-
+        System.setProperty("webdriver.chrome.driver", "../chromedriver");
         String browser = System.getProperty("browser") != null ? System.getProperty("browser").toLowerCase() : "chrome";
 
         switch (browser) {

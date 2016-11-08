@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cart test suite]">
+  <test name="Cart test suit(failed)">
+    <groups>
+      <run>
+        <include name="cart"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="CartTest">
+        <methods>
+          <include name="cartTest"/>
+        </methods>
+      </class> <!-- CartTest -->
+    </classes>
+  </test> <!-- Cart test suit(failed) -->
+</suite> <!-- Failed suite [Cart test suite] -->

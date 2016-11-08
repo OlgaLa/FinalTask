@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
-<suite name="Smoke test suite">
-    <test name="smoke test suit">
+<suite name="Search test suite">
+    <test name="search test suit">
         <groups>
             <run>
                 <include name="search"/>
