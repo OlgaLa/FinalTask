@@ -25,19 +25,17 @@ public class RegistrationPage extends PageBase{
     private static final By MOBILE_PHONE_INPUT = get("RegistrationPage.MobilePhoneInput");
     private static final By ALIAS_INPUT = get("RegistrationPage.AliasInput");
     private static final By REGISTER_BUTTON = get("RegistrationPage.RegisterButton");
+    private static final int INDEX = 1;
 
     public RegistrationPage(WebDriver driver) {  super(driver);  }
 
     private void selectValue(By element) {
-
         Select dropdown = new Select(driver.findElement(element));
-        dropdown.selectByIndex(1);
+        dropdown.selectByIndex(INDEX);
     }
-
 
     public MyAccountPage registerCustomer(String firstName, String lastName, String password, String address,
                                               String city, String postcode, String mobilePhone, String alias) {
-
         driver.findElement(GENDER_CHECKBOX).click();
         driver.findElement(FIRST_NAME_INPUT).sendKeys(firstName);
         driver.findElement(LAST_NAME_INPUT).sendKeys(lastName);
@@ -53,5 +51,4 @@ public class RegistrationPage extends PageBase{
 
         return new MyAccountPage(driver);
     }
-
 }

@@ -12,7 +12,6 @@ public class ProductPage extends PageBase {
     private Product product;
 
     public ProductPage(WebDriver driver) {
-
         super(driver);
         product = new Product(driver);
     }

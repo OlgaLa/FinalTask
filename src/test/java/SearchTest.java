@@ -24,8 +24,7 @@ public class SearchTest extends TestBase {
     @Stories("Verify the ability to search items")
     @Features("SearchTest")
     public void searchTest() {
-
         searchResultsPage = homePage.getHeader().searchItem(SEARCH_ITEM);
-        Assert.assertNotEquals(searchResultsPage.getSearchResults(), 0, "No search result");
+        Assert.assertNotEquals(searchResultsPage.searchResultCount(), 0, "No search result");
     }
 }

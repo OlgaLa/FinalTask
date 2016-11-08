@@ -26,35 +26,29 @@ public class Header {
     public Header(WebDriver driver) { this.driver = driver; }
 
     public ContactUsPage clickContactUs() {
-
         driver.findElement(CONTACT_US_BUTTON).click();
         System.out.print("Click Contact Us");
         return new ContactUsPage(driver);
     }
 
     public AuthenticationPage clickSignIn() {
-
         driver.findElement(SIGN_IN_BUTTON).click();
         System.out.print("Click Sign In");
         return new AuthenticationPage(driver);
     }
 
     public SearchResultsPage searchItem(String item) {
-
         driver.findElement(SEARCH_INPUT).sendKeys(item);
         driver.findElement(SEARCH_BUTTON).click();
         return new SearchResultsPage(driver);
     }
 
     public CartPage clickCart() {
-
         driver.findElement(CART_BUTTON).click();
         return new CartPage(driver);
     }
 
-
     public ProductPage clickTShirtsSubcategory() {
-
         Actions builder = new Actions(driver);
         builder.moveToElement(driver.findElement(WOMEN_CATEGORY)).perform();
         builder.moveToElement(driver.findElement(T_SHIRTS_SUBCATEGORY)).click().perform();
@@ -63,10 +57,7 @@ public class Header {
     }
 
     public MyAccountPage clickUserAccount() {
-
         driver.findElement(USER_ACCOUNT_BUTTON).click();
         return new MyAccountPage(driver);
     }
-
-
 }

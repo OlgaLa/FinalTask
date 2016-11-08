@@ -1,44 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Smoke test suite]">
-  <test name="smoke test suit(failed)">
-    <groups>
-      <run>
-        <include name="smoke"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default Suite]">
+  <test name="FinalTask(failed)">
     <classes>
-      <class name="RegistrationTest">
-        <methods>
-          <include name="registrationTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- RegistrationTest -->
-      <class name="ProductPageTest">
-        <methods>
-          <include name="productPageTest"/>
-        </methods>
-      </class> <!-- ProductPageTest -->
-      <class name="CartTest">
-        <methods>
-          <include name="cartTest"/>
-        </methods>
-      </class> <!-- CartTest -->
-      <class name="CheckoutTest">
-        <methods>
-          <include name="checkoutTest" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- CheckoutTest -->
       <class name="ContactUsTest">
         <methods>
-          <include name="contactUsTest" invocation-numbers="0"/>
-          <include name="contactUsEmptyMessageTest" invocation-numbers="0"/>
+          <include name="contactUsTest"/>
+          <include name="contactUsEmptyMessageTest"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- ContactUsTest -->
-      <class name="SearchTest">
-        <methods>
-          <include name="searchTest"/>
-        </methods>
-      </class> <!-- SearchTest -->
     </classes>
-  </test> <!-- smoke test suit(failed) -->
-</suite> <!-- Failed suite [Smoke test suite] -->
+  </test> <!-- FinalTask(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

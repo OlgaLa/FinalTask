@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1478611174056" stop="1478611195857" version="1.4.6">
+    <name>Default Suite</name>
+    <title>Default Suite : FinalTask[]</title>
+    <test-cases>
+        <test-case start="1478611180910" stop="1478611195624" status="passed">
+            <name>checkoutTest[First Name,Last Name,password,address,City,12345,12345678912,Alias]</name>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testId" value="E-7"/>
+                <label name="story" value="Verify the proceed to checkout"/>
+                <label name="feature" value="CheckoutTest"/>
+                <label name="host" value="M5400"/>
+                <label name="thread" value="12341@M5400.main"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

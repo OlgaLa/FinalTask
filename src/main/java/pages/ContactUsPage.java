@@ -25,18 +25,16 @@ public class ContactUsPage extends PageBase {
     private static final By RESULT_MESSAGE = get("ContactUsPage.ResultMessage");
     private static final By VALIDATION_RESULT_MESSAGE = get("ContactUsPage.ValidationResultMessage");
     private static final String FILE_URL = "src/main/resources/ContactUsAttached.txt";
+    private static final String VALUE = "2";
 
     public ContactUsPage(WebDriver driver) { super(driver); }
 
-
     private void selectSubject() {
-
         Select select = new Select(driver.findElement(SUBJECT_DROPDOWN));
-        select.selectByValue("2");
+        select.selectByValue(VALUE);
     }
 
     private void chooseFile() {
-
         File file = new File(FILE_URL);
         WebElement chooseFileInput = driver.findElement(CHOOSE_FILE_INPUT);
         chooseFileInput.sendKeys(file.getAbsolutePath());
@@ -44,7 +42,6 @@ public class ContactUsPage extends PageBase {
     }
 
     public void sendEmail(String email, String order, String message) {
-
         selectSubject();
         driver.findElement(EMAIL_INPUT).sendKeys(email);
         driver.findElement(ORDER_REFERENCE_INPUT).sendKeys(order);
@@ -54,12 +51,10 @@ public class ContactUsPage extends PageBase {
     }
 
     public String getResultMessage() {
-
         return driver.findElement(RESULT_MESSAGE).getText();
     }
 
     public String getValidationResultMessage() {
-
         return driver.findElement(VALIDATION_RESULT_MESSAGE).getText();
     }
 }

@@ -25,31 +25,25 @@ public class Product {
 
 
     public void clickAddToCart() {
-
         Actions builder = new Actions(driver);
         items = driver.findElements(ITEM_IMAGE);
         builder.moveToElement(items.get(0)).perform();
         builder.moveToElement(driver.findElement(ADD_TO_CART_BUTTON)).click().perform();
-
     }
 
     public void closeProductPopUp() {
-
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(CROSS)));
         driver.findElement(CROSS).click();
 
     }
 
-    public void addProductToCart() throws InterruptedException {
-
+    public void addProductToCart() {
         clickAddToCart();
         closeProductPopUp();
     }
 
     public String getProductTitle() {
-
         return driver.findElement(ITEM_TITLE).getText();
     }
-
 }

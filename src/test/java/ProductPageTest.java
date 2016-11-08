@@ -23,7 +23,6 @@ public class ProductPageTest extends TestBase {
     @Stories("Verify that the T-shirt is in Women catalog")
     @Features("CatalogTest")
     public void productPageTest() {
-
         productPage = homePage.getHeader().clickTShirtsSubcategory();
         Assert.assertTrue(productPage.getProduct().getProductTitle().contains(PRODUCT_CATEGORY), "Product name doesn't contain T-shirts");
     }

@@ -29,8 +29,7 @@ public class CartTest extends TestBase {
     @TestCaseId("E-5")
     @Stories("Verify the ability to add and delete items from cart")
     @Features("CartTest")
-    public void cartTest() throws InterruptedException {
-
+    public void cartTest() {
         searchResultsPage = homePage.getHeader().searchItem(SEARCH_ITEM);
         productText = searchResultsPage.getProduct().getProductTitle();
         searchResultsPage.getProduct().addProductToCart();

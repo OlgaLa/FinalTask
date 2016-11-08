@@ -1,5 +1,5 @@
 import base.TestBase;
-import helpers.ContactUsProvider;
+import helpers.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -22,7 +22,7 @@ public class ContactUsTest extends TestBase {
     private static final String VALIDATIOM_MESSAGE = "There is 1 error\n" +"The message cannot be blank.";
 
 
-    @Test(dataProviderClass = ContactUsProvider.class, dataProvider = "contactUslDataProvider", groups = {"smoke", "contact-us"})
+    @Test(dataProviderClass = TestDataProvider.class, dataProvider = "contactUslDataProvider", groups = {"smoke", "contact-us"})
     @TestCaseId("E-1")
     @Stories("Verify that contact us form sends successfully")
     @Features("ContactUsTest")
@@ -33,16 +33,14 @@ public class ContactUsTest extends TestBase {
         Assert.assertEquals(contactUsPage.getResultMessage(), SUCCESS_MESSAGE);
     }
 
-    @Test(dataProviderClass = ContactUsProvider.class, dataProvider = "contactUsEmptyMessageDataProvider", groups = {"smoke", "contact-us"})
+    @Test(dataProviderClass = TestDataProvider.class, dataProvider = "contactUsEmptyMessageDataProvider", groups = {"smoke", "contact-us"})
     @TestCaseId("E-2")
     @Stories("Verify that error message appears if Message area is empty")
     @Features("ContactUsTest")
     public void contactUsEmptyMessageTest(String order, String message) {
-
         contactUsPage = homePage.getHeader().clickContactUs();
         contactUsPage.sendEmail(generateRandomEmail(), order, message);
         Assert.assertEquals(contactUsPage.getValidationResultMessage(), VALIDATIOM_MESSAGE);
     }
-
 }
 

@@ -1,5 +1,5 @@
 import base.TestBase;
-import helpers.RegistrationDataProvider;
+import helpers.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -24,13 +24,12 @@ public class RegistrationTest extends TestBase{
     private static final String EXPECTED_TITLE = "MY ACCOUNT";
 
 
-    @Test(dataProviderClass = RegistrationDataProvider.class, dataProvider = "registrationDataProvider", groups = {"smoke", "registration"})
+    @Test(dataProviderClass = TestDataProvider.class, dataProvider = "registrationDataProvider", groups = {"smoke", "registration"})
     @TestCaseId("E-3")
     @Stories("Verify the ability to register")
     @Features("RegisterTest")
     public void registrationTest(String firstName, String lastName, String password, String address,
-                                 String city, String postcode, String mobilePhone, String alias) throws InterruptedException {
-
+                                 String city, String postcode, String mobilePhone, String alias) {
         authenticationPage = homePage.getHeader().clickSignIn();
         authenticationPage.enterEmail(generateRandomEmail());
         registrationPage = authenticationPage.clickCreateAccountButton();

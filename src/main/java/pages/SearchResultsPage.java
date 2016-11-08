@@ -16,18 +16,14 @@ public class SearchResultsPage extends PageBase{
     private Product product;
 
     public SearchResultsPage(WebDriver driver) {
-
         super(driver);
         product = new Product(driver);
     }
 
     public Product getProduct() {  return product; }
 
-    public int getSearchResults() {
-
+    public int searchResultCount() {
         System.out.print(driver.findElements(SEARCH_RESULTS).size());
         return driver.findElements(SEARCH_RESULTS).size();
-
     }
-
 }

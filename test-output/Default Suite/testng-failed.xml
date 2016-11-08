@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+<suite name="Failed suite [Default Suite]">
   <test name="FinalTask(failed)">
     <classes>
-      <class name="CartTest">
+      <class name="ContactUsTest">
         <methods>
+          <include name="contactUsTest"/>
+          <include name="contactUsEmptyMessageTest"/>
           <include name="setUp"/>
-          <include name="cartTest"/>
         </methods>
-      </class> <!-- CartTest -->
+      </class> <!-- ContactUsTest -->
     </classes>
   </test> <!-- FinalTask(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

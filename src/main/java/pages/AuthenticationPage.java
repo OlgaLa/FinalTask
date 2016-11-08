@@ -17,12 +17,10 @@ public class AuthenticationPage extends PageBase{
     public AuthenticationPage(WebDriver driver) {  super(driver);   }
 
     public void enterEmail(String email) {
-
         driver.findElement(EMAIL_INPUT).sendKeys(email);
     }
 
     public RegistrationPage clickCreateAccountButton() {
-
         driver.findElement(CREATE_ACCOUNT_BUTTON).click();
         System.out.print("Click Create Account Button");
         return new RegistrationPage(driver);

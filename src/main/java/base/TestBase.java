@@ -21,6 +21,7 @@ public class TestBase {
     @BeforeMethod
     public void setUp() {
 
+        System.setProperty("webdriver.chrome.driver", "../chromedriver");
         String browser = System.getProperty("browser") != null ? System.getProperty("browser").toLowerCase() : "chrome";
 
         switch (browser) {
@@ -30,7 +31,6 @@ public class TestBase {
             default:
                 driver = new ChromeDriver();
                 break;
-
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -40,12 +40,10 @@ public class TestBase {
 
     @AfterMethod
     public void tearDown() {
-
         driver.close();
     }
 
     public String generateRandomEmail() {
-
         Random random = new Random();
         int randomNumber = random.nextInt(10000) + 10000;
         return "o.wartooth+"+randomNumber+"@gmail.com";

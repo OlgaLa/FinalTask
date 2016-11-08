@@ -1,5 +1,5 @@
 import base.TestBase;
-import helpers.RegistrationDataProvider;
+import helpers.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -21,18 +21,14 @@ public class CheckoutTest extends TestBase{
     public RegistrationPage registrationPage;
     public MyAccountPage myAccountPage;
 
-
-
-    @Test(dataProviderClass = RegistrationDataProvider.class, dataProvider = "registrationDataProvider", groups = {"smoke", "checkout"})
+    @Test(dataProviderClass = TestDataProvider.class, dataProvider = "registrationDataProvider", groups = {"smoke", "checkout"})
     @TestCaseId("E-7")
     @Stories("Verify the proceed to checkout")
     @Features("CheckoutTest")
     public void checkoutTest(String firstName, String lastName, String password, String address,
-                             String city, String postcode, String mobilePhone, String alias) throws InterruptedException {
-
+                             String city, String postcode, String mobilePhone, String alias) {
         homePage.getProduct().addProductToCart();
         cartPage = homePage.getHeader().clickCart();
-        Thread.sleep(5000);
         authenticationPage = cartPage.clickProceedToCheckoutForUnauthorizedUser();
         authenticationPage.enterEmail(generateRandomEmail());
         registrationPage = authenticationPage.clickCreateAccountButton();
@@ -41,7 +37,5 @@ public class CheckoutTest extends TestBase{
         myAccountPage.getHeader().clickUserAccount();
         myAccountPage.clickOrdersHistoryButton();
         Assert.assertNotEquals(myAccountPage.checkOrdersTable(), 0, "The oder is not displayed");
-
     }
-
 }
