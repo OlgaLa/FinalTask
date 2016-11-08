@@ -4,7 +4,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.reporters.FailedReporter;
 import pages.SearchResultsPage;
+import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.TestCaseId;
 
 /**
  * Created by olapanovich on 30.10.16.
@@ -18,9 +20,9 @@ public class SearchTest extends TestBase {
 
 
     @Test(groups = {"smoke", "search"})
-    @TestCaseID("E-4")
+    @TestCaseId("E-4")
     @Stories("Verify the ability to search items")
-    @Feature("SearchTest")
+    @Features("SearchTest")
     public void searchTest() {
 
         searchResultsPage = homePage.getHeader().searchItem(SEARCH_ITEM);

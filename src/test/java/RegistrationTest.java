@@ -7,7 +7,9 @@ import org.testng.reporters.FailedReporter;
 import pages.AuthenticationPage;
 import pages.MyAccountPage;
 import pages.RegistrationPage;
+import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.TestCaseId;
 
 /**
  * Created by olapanovich on 30.10.16.
@@ -23,9 +25,9 @@ public class RegistrationTest extends TestBase{
 
 
     @Test(dataProviderClass = RegistrationDataProvider.class, dataProvider = "registrationDataProvider", groups = {"smoke", "registration"})
-    @TestCaseID("E-3")
+    @TestCaseId("E-3")
     @Stories("Verify the ability to register")
-    @Feature("RegisterTest")
+    @Features("RegisterTest")
     public void registrationTest(String firstName, String lastName, String password, String address,
                                  String city, String postcode, String mobilePhone, String alias) throws InterruptedException {
 

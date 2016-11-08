@@ -5,7 +5,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.reporters.FailedReporter;
 import pages.*;
+import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.TestCaseId;
 
 /**
  * Created by olapanovich on 31.10.16.
@@ -22,9 +24,9 @@ public class CheckoutTest extends TestBase{
 
 
     @Test(dataProviderClass = RegistrationDataProvider.class, dataProvider = "registrationDataProvider", groups = {"smoke", "checkout"})
-    @TestCaseID("E-7")
+    @TestCaseId("E-7")
     @Stories("Verify the proceed to checkout")
-    @Feature("CheckoutTest")
+    @Features("CheckoutTest")
     public void checkoutTest(String firstName, String lastName, String password, String address,
                              String city, String postcode, String mobilePhone, String alias) throws InterruptedException {
 

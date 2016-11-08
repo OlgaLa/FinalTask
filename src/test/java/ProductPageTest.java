@@ -4,7 +4,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.reporters.FailedReporter;
 import pages.ProductPage;
+import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.TestCaseId;
 
 /**
  * Created by olapanovich on 31.10.16.
@@ -17,9 +19,9 @@ public class ProductPageTest extends TestBase {
     private static final String PRODUCT_CATEGORY = "T-shirts";
 
     @Test(groups = {"smoke", "product"})
-    @TestCaseID("E-6")
+    @TestCaseId("E-6")
     @Stories("Verify that the T-shirt is in Women catalog")
-    @Feature("CatalogTest")
+    @Features("CatalogTest")
     public void productPageTest() {
 
         productPage = homePage.getHeader().clickTShirtsSubcategory();

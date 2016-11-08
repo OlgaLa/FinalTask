@@ -5,7 +5,9 @@ import org.testng.asserts.SoftAssert;
 import org.testng.reporters.FailedReporter;
 import pages.CartPage;
 import pages.SearchResultsPage;
+import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.TestCaseId;
 
 
 /**
@@ -24,9 +26,9 @@ public class CartTest extends TestBase {
     SoftAssert soft_assert = new SoftAssert();
 
     @Test(groups = {"smoke", "cart"})
-    @TestCaseID("E-5")
+    @TestCaseId("E-5")
     @Stories("Verify the ability to add and delete items from cart")
-    @Feature("CartTest")
+    @Features("CartTest")
     public void cartTest() throws InterruptedException {
 
         searchResultsPage = homePage.getHeader().searchItem(SEARCH_ITEM);

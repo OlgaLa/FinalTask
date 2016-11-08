@@ -5,7 +5,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.reporters.FailedReporter;
 import pages.ContactUsPage;
+import ru.yandex.qatools.allure.annotations.Features;
 import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.TestCaseId;
 
 
 /**
@@ -21,9 +23,9 @@ public class ContactUsTest extends TestBase {
 
 
     @Test(dataProviderClass = ContactUsProvider.class, dataProvider = "contactUslDataProvider", groups = {"smoke", "contact-us"})
-    @TestCaseID("E-1")
+    @TestCaseId("E-1")
     @Stories("Verify that contact us form sends successfully")
-    @Feature("ContactUsTest")
+    @Features("ContactUsTest")
     public void contactUsTest(String order, String message) {
 
         contactUsPage = homePage.getHeader().clickContactUs();
@@ -32,9 +34,9 @@ public class ContactUsTest extends TestBase {
     }
 
     @Test(dataProviderClass = ContactUsProvider.class, dataProvider = "contactUsEmptyMessageDataProvider", groups = {"smoke", "contact-us"})
-    @TestCaseID("E-2")
+    @TestCaseId("E-2")
     @Stories("Verify that error message appears if Message area is empty")
-    @Feature("ContactUsTest")
+    @Features("ContactUsTest")
     public void contactUsEmptyMessageTest(String order, String message) {
 
         contactUsPage = homePage.getHeader().clickContactUs();
