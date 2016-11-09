@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1478600792093" stop="1478600792237" version="1.4.6">
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1478617339253" stop="1478617339379" version="1.4.6">
     <name>Smoke test suite</name>
     <title>Smoke test suite : smoke test suit[]</title>
     <test-cases>
-        <test-case start="1478600792161" stop="1478600792198" status="broken">
+        <test-case start="1478617339315" stop="1478617339341" status="broken">
             <name>cartTest</name>
             <failure>
                 <message>NullPointerException: null</message>
                 <stack-trace>java.lang.NullPointerException
-	at CartTest.cartTest(CartTest.java:34)
+	at CartTest.cartTest(CartTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,15 +46,15 @@
                 <label name="story" value="Verify the ability to add and delete items from cart"/>
                 <label name="feature" value="CartTest"/>
                 <label name="host" value="M5400"/>
-                <label name="thread" value="8418@M5400.main"/>
+                <label name="thread" value="17156@M5400.main"/>
             </labels>
         </test-case>
-        <test-case start="1478600792207" stop="1478600792208" status="broken">
+        <test-case start="1478617339353" stop="1478617339355" status="broken">
             <name>checkoutTest[First Name,Last Name,password,address,City,12345,12345678912,Alias]</name>
             <failure>
                 <message>NullPointerException: null</message>
                 <stack-trace>java.lang.NullPointerException
-	at CheckoutTest.checkoutTest(CheckoutTest.java:33)
+	at CheckoutTest.checkoutTest(CheckoutTest.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -92,15 +92,15 @@
                 <label name="story" value="Verify the proceed to checkout"/>
                 <label name="feature" value="CheckoutTest"/>
                 <label name="host" value="M5400"/>
-                <label name="thread" value="8418@M5400.main"/>
+                <label name="thread" value="17156@M5400.main"/>
             </labels>
         </test-case>
-        <test-case start="1478600792209" stop="1478600792213" status="broken">
+        <test-case start="1478617339357" stop="1478617339358" status="broken">
             <name>contactUsEmptyMessageTest[123,]</name>
             <failure>
                 <message>NullPointerException: null</message>
                 <stack-trace>java.lang.NullPointerException
-	at ContactUsTest.contactUsEmptyMessageTest(ContactUsTest.java:42)
+	at ContactUsTest.contactUsEmptyMessageTest(ContactUsTest.java:41)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -138,10 +138,10 @@
                 <label name="story" value="Verify that error message appears if Message area is empty"/>
                 <label name="feature" value="ContactUsTest"/>
                 <label name="host" value="M5400"/>
-                <label name="thread" value="8418@M5400.main"/>
+                <label name="thread" value="17156@M5400.main"/>
             </labels>
         </test-case>
-        <test-case start="1478600792216" stop="1478600792218" status="broken">
+        <test-case start="1478617339361" stop="1478617339363" status="broken">
             <name>contactUsTest[123,Message 123]</name>
             <failure>
                 <message>NullPointerException: null</message>
@@ -184,15 +184,15 @@
                 <label name="story" value="Verify that contact us form sends successfully"/>
                 <label name="feature" value="ContactUsTest"/>
                 <label name="host" value="M5400"/>
-                <label name="thread" value="8418@M5400.main"/>
+                <label name="thread" value="17156@M5400.main"/>
             </labels>
         </test-case>
-        <test-case start="1478600792220" stop="1478600792221" status="broken">
+        <test-case start="1478617339364" stop="1478617339367" status="broken">
             <name>productPageTest</name>
             <failure>
                 <message>NullPointerException: null</message>
                 <stack-trace>java.lang.NullPointerException
-	at ProductPageTest.productPageTest(ProductPageTest.java:27)
+	at ProductPageTest.productPageTest(ProductPageTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -230,15 +230,15 @@
                 <label name="story" value="Verify that the T-shirt is in Women catalog"/>
                 <label name="feature" value="CatalogTest"/>
                 <label name="host" value="M5400"/>
-                <label name="thread" value="8418@M5400.main"/>
+                <label name="thread" value="17156@M5400.main"/>
             </labels>
         </test-case>
-        <test-case start="1478600792224" stop="1478600792226" status="broken">
+        <test-case start="1478617339370" stop="1478617339372" status="broken">
             <name>registrationTest[First Name,Last Name,password,address,City,12345,12345678912,Alias]</name>
             <failure>
                 <message>NullPointerException: null</message>
                 <stack-trace>java.lang.NullPointerException
-	at RegistrationTest.registrationTest(RegistrationTest.java:34)
+	at RegistrationTest.registrationTest(RegistrationTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -276,15 +276,15 @@
                 <label name="story" value="Verify the ability to register"/>
                 <label name="feature" value="RegisterTest"/>
                 <label name="host" value="M5400"/>
-                <label name="thread" value="8418@M5400.main"/>
+                <label name="thread" value="17156@M5400.main"/>
             </labels>
         </test-case>
-        <test-case start="1478600792228" stop="1478600792231" status="broken">
+        <test-case start="1478617339374" stop="1478617339376" status="broken">
             <name>searchTest</name>
             <failure>
                 <message>NullPointerException: null</message>
                 <stack-trace>java.lang.NullPointerException
-	at SearchTest.searchTest(SearchTest.java:28)
+	at SearchTest.searchTest(SearchTest.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -322,7 +322,7 @@
                 <label name="story" value="Verify the ability to search items"/>
                 <label name="feature" value="SearchTest"/>
                 <label name="host" value="M5400"/>
-                <label name="thread" value="8418@M5400.main"/>
+                <label name="thread" value="17156@M5400.main"/>
             </labels>
         </test-case>
     </test-cases>

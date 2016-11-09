@@ -1,4 +1,5 @@
 import base.TestBase;
+import helpers.FailListener;
 import helpers.TestDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
@@ -13,7 +14,7 @@ import ru.yandex.qatools.allure.annotations.TestCaseId;
  * Created by olapanovich on 31.10.16.
  */
 
-@Listeners(FailedReporter.class)
+@Listeners(FailListener.class)
 public class CheckoutTest extends TestBase{
 
     private CartPage cartPage;

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1478600700582" stop="1478600700591" version="1.4.6">
-    <name>Cart test suite</name>
-    <title>Cart test suite : Cart test suit[]</title>
-    <labels>
-        <label name="framework" value="TestNG"/>
-        <label name="language" value="JAVA"/>
-    </labels>
-</ns2:test-suite>

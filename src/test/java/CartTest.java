@@ -1,4 +1,5 @@
 import base.TestBase;
+import helpers.FailListener;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -14,7 +15,7 @@ import ru.yandex.qatools.allure.annotations.TestCaseId;
  * Created by olapanovich on 30.10.16.
  */
 
-@Listeners(FailedReporter.class)
+@Listeners(FailListener.class)
 public class CartTest extends TestBase {
 
     private SearchResultsPage searchResultsPage;
